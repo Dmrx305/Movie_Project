@@ -1,8 +1,8 @@
 import random
-from movie_storage_sql import add_movie as add_movie_to_db
-from movie_storage_sql import list_movies as list_movies_from_db
-from movie_storage_sql import delete_movie
-from movie_storage_sql import update_movie
+from Movie_Project.movie_storage.movie_storage_sql import add_movie as add_movie_to_db
+from Movie_Project.movie_storage.movie_storage_sql import list_movies as list_movies_from_db
+from Movie_Project.movie_storage.movie_storage_sql import delete_movie
+from Movie_Project.movie_storage.movie_storage_sql import update_movie
 
 def menu():
     """printing the main menu"""
