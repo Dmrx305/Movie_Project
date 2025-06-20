@@ -1,8 +1,12 @@
 from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
 import requests
+import os
+
 
 DB_URL = "sqlite:///movies.db"
-OMDB_API_KEY = "7e15bf7a"
+load_dotenv()
+OMDB_API_KEY = os.getenv("OMDB_API_KEY")
 
 engine = create_engine(DB_URL, echo=True)
 
